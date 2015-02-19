@@ -2,9 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Handlee);
 
 body {
-  background: url(6.jpg) no-repeat top center;
+  background: #303F9F;
   font-family: 'PT Sans Narrow', sans-serif;
-  color: #333;
+  color: #fff;
   min-width: 1200px;
   overflow: hidden;
 }
@@ -37,5 +37,5 @@ h1 {
 }
 
 .contact a {
-  color: #2e6dff;
+  color: #C5CAE9;
 }
