@@ -1,15 +1,41 @@
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+
 body {
-  background: url(6.jpg) no-repeat;
+  background: url(6.jpg) no-repeat top center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #333;
+  min-width: 1200px;
+  overflow: hidden;
 }
 
-.text {
-  height: 10em;
-  line-height: 10em;
+header {
   text-align: center;
-  white-space: nowrap;
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
-  color: white;
-  text-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+.small {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  font-size: 1.8em;
+  font-weight: 400;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.contact a {
+  color: #2e6dff;
 }
