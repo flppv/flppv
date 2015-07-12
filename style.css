@@ -39,8 +39,6 @@ p {
           animation-delay: 2s;
 }
 
-
-
 video#bgvid {
   position: fixed;
   top: 50%;
@@ -52,7 +50,7 @@ video#bgvid {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
+  background: #5f8a9c no-repeat;
   background-size: cover;
 }
 
