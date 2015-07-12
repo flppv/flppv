@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script|Yantramanav:100);
 
 body {
-  background: linear-gradient(to bottom, #ffffff 55%,#f4e8de 100%);
-  background-repeat: no-repeat;
   height: 100%;
   color: #fff;
   overflow: hidden;
@@ -19,7 +17,7 @@ body {
 
 p {
   margin: 0;
-  color: #4F4B47;
+  color: #fff;
 }
 
 .name {
@@ -40,3 +38,21 @@ p {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
+
+
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
