@@ -1,41 +1,42 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
-@import url(http://fonts.googleapis.com/css?family=Handlee);
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script|Yantramanav:100);
 
 body {
-  background: #303F9F;
-  font-family: 'PT Sans Narrow', sans-serif;
+  background: linear-gradient(to bottom, #ffffff 55%,#f4e8de 100%);
+  background-repeat: no-repeat;
+  height: 100%;
   color: #fff;
-  min-width: 1200px;
   overflow: hidden;
 }
 
-header {
+.labels {
+  display: block;
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
+  margin: auto 0 0 0;
   text-align: center;
 }
 
-h1 {
-  font-size: 3.5em;
-  font-weight: 700;
+p {
+  margin: 0;
+  color: #4F4B47;
 }
 
-.small {
-  font-weight: 400;
-  margin-bottom: 20px;
+.name {
+  font-family: Kaushan Script, Georgia, serif;
+  font-size: 4em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-.contact {
-  text-align: center;
-  font-family: 'Handlee', cursive;
-  font-size: 1.8em;
-  font-weight: 400;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.contact a {
-  color: #C5CAE9;
+.profession {
+  font-family: Yantramanav, Verdana, sans-serif;
+  bottom: 10%;
+  font-size: 2em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
