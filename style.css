@@ -3,11 +3,12 @@
 body {
   height: 100%;
   color: #fff;
+  background: #262626;
   overflow: hidden;
 }
 
 #rectangle {
-  background: #136896 url(https://pp.vk.me/c627720/v627720492/b42d/DU9DJ7ln3_s.jpg) no-repeat center center fixed;
+  background: #136896 url(https://pp.vk.me/c543104/v543104717/9a6c/rTlQoX2YxwE.jpg) no-repeat center center fixed;
   background-size: cover;
   display: block;
   position: fixed;
@@ -17,20 +18,28 @@ body {
   height: 70%;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 30px 50px 0 rgba(0,0,0,.5);
+  box-shadow: 0 30px 50px 0 rgba(0,0,0,.5), 0 -1px 0 0 rgba(255,255,255,.03);
 }
 
 #labels {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    text-shadow: 0 0 30px rgba(0,0,0,.3);
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-shadow: 0 0 30px rgba(0,0,0,.3);
+  opacity: .8;
+  transition: all .2s linear;
+}
+
+#labels:hover {
+  opacity: 1;
+  text-shadow: 0 0 20px rgba(255,255,255,.3);
 }
 
 p {
   margin: 0;
   color: #fff;
 }
+
 
 .name {
   font-family: Kaushan Script, Georgia, serif;
