@@ -6,13 +6,25 @@ body {
   overflow: hidden;
 }
 
-.labels {
+#rectangle {
+  background: #136896 url(https://pp.vk.me/c627720/v627720492/b42d/DU9DJ7ln3_s.jpg) no-repeat center center fixed;
+  background-size: cover;
   display: block;
   position: fixed;
-  bottom: 10%;
-  width: 100%;
-  margin: auto 0 0 0;
+  bottom: 15%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
   text-align: center;
+  box-shadow: 0 30px 50px 0 rgba(0,0,0,.5);
+}
+
+#labels {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-shadow: 0 0 30px rgba(0,0,0,.3);
 }
 
 p {
@@ -23,34 +35,10 @@ p {
 .name {
   font-family: Kaushan Script, Georgia, serif;
   font-size: 4em;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .profession {
   font-family: Yantramanav, Verdana, sans-serif;
   bottom: 10%;
   font-size: 2em;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
-
-video#bgvid {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: #5f8a9c no-repeat;
-  background-size: cover;
-}
-

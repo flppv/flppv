@@ -3,15 +3,21 @@
     <meta charset="UTF-8">
     <title>Filippov Anton - Freelance web-developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
-    <video autoplay loop id="bgvid">
-    <source src="video.webm" type="video/webm">
-    </video>
-    <div class="labels">
-      <p class="name animated fadeinup">Filippov Anton</p>
-      <p class="profession animated fadeinup">Freelance web-developer</p>
+    <div id="rectangle">
+      <div id="labels">
+        <p class="name">Filippov Anton</p>
+        <p class="profession">Freelance web-developer</p>
+      </div>
     </div>
   </body>
+  <script>
+  $("body").mousemove(function(e){
+    var amountMovedX = (e.pageX * -0.02);
+    var amountMovedY = (e.pageY * -0.02);
+    $("#rectangle").css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+  });
+  </script>
 </html>
