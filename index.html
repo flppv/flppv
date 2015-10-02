@@ -1,23 +1,14 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Filippov Anton - Freelance web-developer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>Filippov Anton</title>
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="normalize.css">
   </head>
   <body>
-    <div id="rectangle">
-      <div id="labels">
-        <p class="name">Filippov Anton</p>
-        <p class="profession">Freelance web-developer</p>
-      </div>
+    <div class="card">
+      <h1>Filippov Anton</h1>
+      <p>Front-end web-developer</p>
     </div>
   </body>
-  <script>
-  $("body").mousemove(function(e){
-    var amountMovedX = (e.pageX * -0.01);
-    var amountMovedY = (e.pageY * -0.01);
-    $("#rectangle").css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-  });
-  </script>
 </html>

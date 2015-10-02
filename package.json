@@ -1,0 +1,19 @@
+{
+  "name": "fllpv.me",
+  "version": "1.0.3",
+  "description": "My homepage",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4"
+  },
+  "author": "vic",
+  "license": "ISC"
+}
