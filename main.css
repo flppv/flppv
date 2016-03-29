@@ -95,3 +95,30 @@ body.front .labels p {
   margin: 15px 0;
   font-family: 'Noto Sans', sans-serif;
 }
+
+@media screen and (max-width: 900px) {
+  .faq .questions {
+    margin: 30px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faq .questions {
+    margin: 20px;
+  }
+  .faq .questions .question {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 3px;
+  }
+  .faq .questions .question h2 {
+    padding: 20px 30px;
+    font-size: 28px;
+  }
+  .faq .questions .question .answer {
+    padding: 10px 30px;
+  }
+  .faq .questions .question .answer p {
+    font-size: 18px;
+  }
+}
