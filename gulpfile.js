@@ -33,7 +33,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('templates', function () {
-  gulp.src('src/*.jade')
+  gulp.src('src/**/*.jade')
     .pipe(plumber())
     .pipe(jade({ pretty: true }))
     .pipe(gulp.dest('./'))
