@@ -44,7 +44,7 @@ body.front .labels p {
 }
 
 .faq {
-  background: #46c777;
+  background: #babfd1;
 }
 
 .faq .questions {
@@ -62,6 +62,11 @@ body.front .labels p {
 
 .faq .questions a:hover {
   text-decoration: none;
+}
+
+.faq .questions h4 {
+  font-size: 22px;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .faq .questions .question {
@@ -87,6 +92,8 @@ body.front .labels p {
   display: none;
   padding: 20px 40px;
   border-top: 2px dashed black;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   background: #eee;
 }
 
