@@ -44,7 +44,7 @@ body.front .labels p {
 }
 
 .faq {
-  background: black;
+  background: #46c777;
 }
 
 .faq .questions {
@@ -52,9 +52,22 @@ body.front .labels p {
   box-sizing: border-box;
 }
 
+.faq .questions a {
+  color: #1c964a;
+}
+
+.faq .questions a:visited {
+  color: #078938;
+}
+
+.faq .questions a:hover {
+  text-decoration: none;
+}
+
 .faq .questions .question {
   background: #fff;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 
 .faq .questions .question h2 {
