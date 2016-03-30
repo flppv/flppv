@@ -6,6 +6,9 @@ html
     meta(charset="utf-8")
     link(rel="stylesheet", href="../main.min.css")
     link(rel="stylesheet", href="../normalize.css")
+    script(type="text/javascript" src="//vk.com/js/api/openapi.js?121")
+    script(type="text/javascript").
+      VK.init({apiId: 5386506, onlyWidgets: true});
   body.faq
     .questions
       .breakline
@@ -117,6 +120,10 @@ html
             a(href="https://vk.com/vicodin" target="_blank") vk
             | , если вы не зарегистрированы там, пишите 
             a(href="mailto:flppv8@gmail.com") на почту.
+    .like
+      #vk_like
+      script(type="text/javascript").
+        VK.Widgets.Like("vk_like", {type: "button", verb: 1, height: 24});
 
     script(src="//code.jquery.com/jquery-2.2.1.min.js")
     script(src="../script.js")
