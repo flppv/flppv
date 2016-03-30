@@ -103,6 +103,16 @@ body.front .labels p {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.faq .like {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto;
+}
+
 @media screen and (max-width: 900px) {
   .faq .questions {
     margin: 30px 50px;
