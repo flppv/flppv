@@ -46,6 +46,15 @@ body.front .labels p {
 
 body.front .links {
   margin-top: .5em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body.front .links a {
@@ -54,8 +63,9 @@ body.front .links a {
   background-color: black;
   font-family: Dosis, sans-serif;
   text-transform: lowercase;
-  margin: 0 0.2em;
-  padding: 0 1em;
+  margin: 0 0.5em;
+  padding: 0 0.5em;
+  width: 5em;
   text-decoration: none;
 }
 
