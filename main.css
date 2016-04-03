@@ -3,6 +3,7 @@ body.front {
   background: url(./bg.jpg) 50% 50% fixed;
   background-size: cover;
   color: #fff;
+  font-family: Dosis, sans-serif;
 }
 
 body.front .wrapper {
@@ -24,6 +25,7 @@ body.front .wrapper {
 
 body.front .labels {
   text-align: center;
+  position: relative;
 }
 
 body.front .labels h1 {
@@ -35,13 +37,14 @@ body.front .labels h1 {
 
 body.front .labels p {
   display: inline-block;
-  background-color: black;
-  padding: 0 1.5em;
-  font-family: Dosis, sans-serif;
-  font-size: 1em;
-  margin: 5px;
+  position: absolute;
+  white-space: nowrap;
+  top: 5.75em;
+  right: 1em;
+  font-size: .8em;
   text-transform: uppercase;
   letter-spacing: 3px;
+  color: black;
 }
 
 body.front .links {
@@ -67,6 +70,79 @@ body.front .links a {
   padding: 0 0.5em;
   width: 5em;
   text-decoration: none;
+}
+
+body.front h6 {
+  margin: .25em 0;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+body.front .short {
+  margin: 1em;
+  background: rgba(230, 230, 230, 0.8);
+  color: #232323;
+  padding: 1em;
+}
+
+body.front .short .info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+body.front .short .info .item {
+  margin: 0;
+  font-size: .8em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body.front .short .info .item .count {
+  font-size: 2.4em;
+  font-family: 'Roboto Slab', serif;
+  margin-right: .5em;
+  width: 50%;
+  text-align: right;
+}
+
+body.front .short .info .item .label {
+  width: 50%;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+body.front .stack {
+  margin: 1em;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 1em;
+}
+
+body.front .stack .technologies {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body.front .stack .technologies span {
+  display: block;
+  margin: 0.25em 0.5em;
 }
 
 .faq {

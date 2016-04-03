@@ -4,6 +4,7 @@ body.front
   background: url(./bg.jpg) 50% 50% fixed
   background-size: cover
   color: #fff
+  font-family: Dosis, sans-serif
 
   .wrapper
     width: 100%
@@ -15,6 +16,7 @@ body.front
 
   .labels
     text-align: center
+    position: relative
     h1
       font-family: Enriqueta, sans-serif
       font-size: 4em
@@ -22,13 +24,14 @@ body.front
       padding: 0
     p
       display: inline-block
-      background-color: black
-      padding: 0 1.5em
-      font-family: Dosis, sans-serif
-      font-size: 1em
-      margin: 5px
+      position: absolute
+      white-space: nowrap
+      top: 5.75em
+      right: 1em
+      font-size: .8em
       text-transform: uppercase
       letter-spacing: 3px
+      color: black
   .links
     margin-top: .5em
     display: flex
@@ -44,6 +47,45 @@ body.front
       padding: 0 .5em
       width: 5em
       text-decoration: none
+  h6
+    margin: .25em 0
+    font-size: 1em
+    text-transform: uppercase
+  .short
+    margin: 1em
+    background: rgba(230,230,230,.8)
+    color: #232323
+    padding: 1em
+    .info
+      display: flex
+      flex-flow: column nowrap
+      .item 
+        margin: 0
+        font-size: .8em
+        display: flex
+        align-items: center
+        justify-content: center
+        .count
+          font-size: 2.4em
+          font-family: 'Roboto Slab', serif
+          margin-right: .5em
+          width: 50%
+          text-align: right
+        .label
+          width: 50%
+          text-align: left
+          font-size: 1.25em
+  .stack
+    margin: 1em
+    background: rgba(20,20,20,.8)
+    padding: 1em
+    .technologies
+      display: flex
+      flex-flow: column wrap
+      align-items: flex-start
+      span
+        display: block
+        margin: .25em .5em
 
 
 .faq
