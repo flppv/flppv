@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Enriqueta|Dosis|Roboto+Slab:700|Noto+Sans:400italic);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta|Dosis|Roboto+Slab:300,400,700|Noto+Sans:400italic);
 body.front {
   background: url(./bg.jpg) 50% 50% fixed;
   background-size: cover;
@@ -151,7 +151,8 @@ body.front .stack .technologies span {
 }
 
 .faq .questions {
-  margin: 30px 150px;
+  max-width: 850px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -168,7 +169,8 @@ body.front .stack .technologies span {
 }
 
 .faq .questions h4 {
-  font-size: 22px;
+  font-size: 20px;
+  margin: 20px 0;
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -179,11 +181,11 @@ body.front .stack .technologies span {
 }
 
 .faq .questions .question h2 {
-  padding: 20px 40px;
+  padding: 15px 30px;
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -193,16 +195,16 @@ body.front .stack .technologies span {
 
 .faq .questions .question .answer {
   display: none;
-  padding: 20px 40px;
-  border-top: 2px dashed black;
+  padding: 15px 30px;
+  border-top: 1px dashed black;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #eee;
+  background: #efefef;
 }
 
 .faq .questions .question .answer p {
-  font-size: 20px;
-  margin: 15px 0;
+  font-size: 18px;
+  margin: 5px 0;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -218,7 +220,7 @@ body.front .stack .technologies span {
 
 @media screen and (max-width: 900px) {
   .faq .questions {
-    margin: 30px 50px;
+    margin: 30px;
   }
 }
 
