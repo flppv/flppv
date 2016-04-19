@@ -8,7 +8,7 @@ body.front {
 
 body.front .wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +49,7 @@ body.front .labels p {
 
 body.front .links {
   margin-top: .5em;
+  margin-bottom: 1em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -240,31 +241,12 @@ body.front .stack .technologies span {
   .faq .questions .question .answer p {
     font-size: 18px;
   }
-}
-
-.boom .time {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  background: tomato;
-  width: 100%;
-  height: 100vh;
-}
-
-.boom .time span {
-  font-size: 72px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.boom .time span.small {
-  font-size: 48px;
+  body.front .labels h1 {
+    font-size: 3em;
+  }
+  body.front .labels p {
+    font-size: .75em;
+    top: 4.25em;
+    right: 2.25em;
+  }
 }

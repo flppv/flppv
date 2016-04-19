@@ -8,7 +8,7 @@ body.front
 
   .wrapper
     width: 100%
-    height: 100vh
+    min-height: 100vh
     display: flex
     flex-direction: column
     justify-content: center
@@ -34,6 +34,7 @@ body.front
       color: black
   .links
     margin-top: .5em
+    margin-bottom: 1em
     display: flex
     align-items: center
     justify-content: center
@@ -149,18 +150,10 @@ body.front
           padding: 10px 30px
           p
             font-size: 18px 
-
-.boom 
-  .time
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-flow: column 
-    background: tomato
-    width: 100%
-    height: 100vh
-    span
-      font-size: 72px
-      font-family: 'Roboto Slab', serif
-      &.small
-        font-size: 48px
+  body.front .labels
+    h1
+      font-size: 3em
+    p
+      font-size: .75em
+      top: 4.25em
+      right: 2.25em
