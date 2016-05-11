@@ -16,13 +16,20 @@ html
         .details
           .info
             .item
-              .count 46k+
+              .count
+                span#code 0
+                span k+
               .label lines of code for the last 6 months
             .item 
-              .count 114/0
+              .count
+                span#pos 0
+                span /
+                span 0
               .label positive/negative freelance feedback
             .item
-              .count 350+
+              .count 
+                span#gh 0
+                span +
               .label Github contributions* 
         .links
           a(href="https://github.com/vicodinchik" target="_blank")
@@ -33,5 +40,5 @@ html
             img(src="up.png")
     script(src="//code.jquery.com/jquery-2.2.1.min.js")
     script(src="//rawgit.com/VodkaBears/Vide/master/dist/jquery.vide.min.js")
-    script
-      $('.video').vide('bg');
+    script(src="//rawgit.com/aishek/jquery-animateNumber/master/jquery.animateNumber.min.js")
+    script(src="index.js")

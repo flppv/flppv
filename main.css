@@ -74,6 +74,7 @@ body.front .info {
 
 body.front .info .item {
   margin: 0 5em;
+  width: 100%;
   font-size: .8em;
   display: -webkit-flex;
   display: -ms-flexbox;
