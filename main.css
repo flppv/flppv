@@ -92,6 +92,7 @@ body.front .info .item {
 
 body.front .info .item .count {
   font-size: 8em;
+  min-width: 250px;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-align: center;
@@ -202,6 +203,15 @@ body.front .links a img {
   margin: 50px auto;
 }
 
+@media screen and (max-width: 1060px) {
+  body.front .info .item {
+    margin: 0 1.5em;
+  }
+  body.front .info .item .count {
+    font-size: 5.5em;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .faq .questions {
     margin: 30px;
@@ -212,11 +222,11 @@ body.front .links a img {
             justify-content: space-between;
   }
   body.front .info .item {
-    margin: 1.5em 0;
+    margin: 1.5em 2.5em;
     max-width: 150px;
   }
   body.front .info .item .count {
-    font-size: 4em;
+    font-size: 4.5em;
   }
   body.front .info .item .label {
     white-space: normal;
@@ -239,13 +249,14 @@ body.front .links a img {
   }
   body.front .info .item {
     margin: .5em 0;
-    max-width: 100%;
+    max-width: 150px;
   }
   body.front .info .item .count {
     font-size: 3em;
   }
   body.front .info .item .label {
     white-space: normal;
+    line-height: 1.25;
   }
   body.front .links {
     -webkit-flex-flow: column;

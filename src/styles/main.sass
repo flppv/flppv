@@ -53,6 +53,7 @@ body.front
       justify-content: center
       .count
         font-size: 8em
+        min-width: 250px
         font-family: Montserrat, sans-serif
         font-weight: 700
         text-align: center
@@ -118,6 +119,12 @@ body.front
     justify-content: center
     margin: 50px auto
 
+@media screen and (max-width: 1060px) 
+  body.front
+    .info .item
+      margin: 0 1.5em
+      .count
+        font-size: 5.5em
 @media screen and (max-width: 960px) 
   .faq
     .questions
@@ -126,10 +133,10 @@ body.front
     .info
       justify-content: space-between 
       .item
-        margin: 1.5em 0
+        margin: 1.5em 2.5em
         max-width: 150px
         .count
-          font-size: 4em
+          font-size: 4.5em
         .label
           white-space: normal
           font-size: 1.25em
@@ -142,11 +149,12 @@ body.front
       justify-content: initial
       .item
         margin: .5em 0
-        max-width: 100%
+        max-width: 150px
         .count
           font-size: 3em
         .label
           white-space: normal 
+          line-height: 1.25
     .links
       flex-flow: column
       justify-content: space-between
