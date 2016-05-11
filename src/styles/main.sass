@@ -22,7 +22,7 @@ body.front
     margin-top: 1em
     h1
       font-family: Ubuntu, sans-serif
-      font-size: 4em
+      font-size: 4.5em
       margin: 0
       padding: 0
       color: #fff
@@ -30,7 +30,7 @@ body.front
       display: inline-block
       margin: 0
       white-space: nowrap
-      font-size: 1em
+      font-size: 1.25em
       text-transform: uppercase
       letter-spacing: 3px
       color: #fff
@@ -52,13 +52,14 @@ body.front
       align-items: center
       justify-content: center
       .count
-        font-size: 6em
+        font-size: 8em
         font-family: Montserrat, sans-serif
         font-weight: 700
         text-align: center
       .label
+        margin-top: -1em
         text-align: center
-        font-size: 1.25em
+        font-size: 1.5em
   .links
     margin-top: 5em
     margin-bottom: 1em
@@ -67,7 +68,9 @@ body.front
     justify-content: center
     a
       display: inline-block
-      margin: 0 2em
+      margin: 0 1.5em
+      &:first-child img
+        width: 100px
       img
         width: 125px
 
@@ -126,9 +129,11 @@ body.front
         margin: 1.5em 0
         max-width: 150px
         .count
-          font-size: 3em
+          font-size: 4em
         .label
           white-space: normal
+          font-size: 1.25em
+          margin-top: .75em
 @media screen and (max-width: 540px)
   body.front
     .info
