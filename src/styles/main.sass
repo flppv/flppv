@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Enriqueta|Dosis|Roboto+Slab:300,400,700|Noto+Sans:400italic)
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400italic)
 
 body.front
-  background: url(./bg.jpg) 50% 50% fixed
-  background-size: cover
   color: #fff
-  font-family: Dosis, sans-serif
+  overflow: hidden
+  font-family: Monda, sans-serif
+  *::selection
+    background: #000
 
   .wrapper
     width: 100%
@@ -13,80 +14,61 @@ body.front
     flex-direction: column
     justify-content: center
     align-items: center
+    z-index: 999
 
   .labels
     text-align: center
     position: relative
+    margin-top: 1em
     h1
-      font-family: Enriqueta, sans-serif
+      font-family: Ubuntu, sans-serif
       font-size: 4em
-      margin: .2em
+      margin: 0
       padding: 0
+      color: #fff
     p
       display: inline-block
-      position: absolute
+      margin: 0
       white-space: nowrap
-      top: 5.75em
-      right: 1em
-      font-size: .8em
+      font-size: 1em
       text-transform: uppercase
       letter-spacing: 3px
-      color: black
+      color: #fff
+  h6
+    margin: .25em 0
+    font-size: 1em
+    text-transform: uppercase
+  .info
+    display: flex
+    align-items: flex-start
+    margin: 2.5em 0
+    color: #fff 
+    .item 
+      margin: 0 5em
+      font-size: .8em
+      display: flex
+      flex-flow: column
+      align-items: center
+      justify-content: center
+      .count
+        font-size: 6em
+        font-family: Montserrat, sans-serif
+        font-weight: 700
+        text-align: center
+      .label
+        text-align: center
+        font-size: 1.25em
   .links
-    margin-top: .5em
+    margin-top: 5em
     margin-bottom: 1em
     display: flex
     align-items: center
     justify-content: center
     a
       display: inline-block
-      color: white
-      background-color: black
-      font-family: Dosis, sans-serif
-      text-transform: lowercase
-      margin: 0 .5em
-      padding: 0 .5em
-      width: 5em
-      text-decoration: none
-  h6
-    margin: .25em 0
-    font-size: 1em
-    text-transform: uppercase
-  .short
-    margin: 1em
-    background: rgba(230,230,230,.8)
-    color: #232323
-    padding: 1em
-    .info
-      display: flex
-      flex-flow: column nowrap
-      .item 
-        margin: 0
-        font-size: .8em
-        display: flex
-        align-items: center
-        justify-content: center
-        .count
-          font-size: 2.4em
-          font-family: 'Roboto Slab', serif
-          margin-right: .5em
-          width: 50%
-          text-align: right
-        .label
-          width: 50%
-          text-align: left
-          font-size: 1.25em
-  .stack
-    margin: 1em
-    background: rgba(20,20,20,.8)
-    padding: 1em
-    .technologies
-      display: flex
-      flex-flow: column wrap
-      align-items: flex-start
-      span
-        display: block
-        margin: .25em .5em
+      margin: 0 2em
+      img
+        width: 125px
 
 .faq
   background: #babfd1
@@ -132,11 +114,41 @@ body.front
     justify-content: center
     margin: 50px auto
 
-@media screen and (max-width: 900px) 
+@media screen and (max-width: 960px) 
   .faq
     .questions
       margin: 30px
-@media screen and (max-width: 500px) 
+  body.front
+    .info
+      justify-content: space-between 
+      .item
+        margin: 1.5em 0
+        max-width: 150px
+        .count
+          font-size: 3em
+        .label
+          white-space: normal
+@media screen and (max-width: 540px)
+  body.front
+    .info
+      flex-flow: column
+      align-items: center
+      justify-content: initial
+      .item
+        margin: .5em 0
+        max-width: 100%
+        .count
+          font-size: 3em
+        .label
+          white-space: normal 
+    .links
+      flex-flow: column
+      justify-content: space-between
+      margin: 1em
+      a
+        margin: .5em
+        img
+          width: 80px
   .faq
     .questions
       margin: 20px
@@ -156,5 +168,3 @@ body.front
       font-size: 3em
     p
       font-size: .75em
-      top: 4.25em
-      right: 2.25em

@@ -4,41 +4,34 @@ html
     title Filippov Anton
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(charset="utf-8")
-    link(rel="stylesheet", href="main.min.css")
     link(rel="stylesheet", href="normalize.css")
-  body.front
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+    link(rel="stylesheet", href="main.min.css")
+  body.front(data-vide-bg="bg" data-vide-options="posterType: jpg")
+    img(src="http://i.imgur.com/iEJUW63.png" alt="" style="position:absolute;")
     .wrapper
-      img(src="http://i.imgur.com/iEJUW63.png" alt="" style="position:absolute;")
       .labels
         h1 Filippov Anton
         p Front-end developer
         .details
-          .short
-            h6 Short info
-            .info
-              .item
-                .count 23
-                .label age
-              .item
-                .count 44765+
-                .label lines of code for the last 6 months
-              .item 
-                .count 114/0
-                .label positive/negative freelance feedback
-              .item
-                .count 300+
-                .label Github contributions* 
-          .stack
-            h6 stack of known technologies
-            .technologies
-              span HTML5, CSS3 
-              span JS, ES6
-              span jQuery, jQueryUI, AJAX, JSON
-              span Bootstrap 3/4, Foundation, SemanticUI
-              span Angular 1.x, Ember, Knockout, React
-              span Any preprocessor, Gulp/Grunt/Webpack
-              span Git, Gitflow, GitHub, BitBucket, GitLab, gh-pages
+          .info
+            .item
+              .count 46k+
+              .label lines of code for the last 6 months
+            .item 
+              .count 114/0
+              .label positive/negative freelance feedback
+            .item
+              .count 350+
+              .label Github contributions* 
         .links
-          a(href="https://github.com/vicodinchik" target="_blank") GitHub
-          a(href="https://www.linkedin.com/in/antonfilippov" target="_blank") LinkedIn
-          a(href="https://www.upwork.com/fl/frontend" target="_blank") Upwork
+          a(href="https://github.com/vicodinchik" target="_blank")
+            img(src="gh.png")
+          a(href="https://www.linkedin.com/in/antonfilippov" target="_blank")
+            img(src="li.png")
+          a(href="https://www.upwork.com/fl/frontend" target="_blank")
+            img(src="up.png")
+    script(src="//code.jquery.com/jquery-2.2.1.min.js")
+    script(src="//rawgit.com/VodkaBears/Vide/master/dist/jquery.vide.min.js")
+    script
+      $('.video').vide('bg');
