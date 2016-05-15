@@ -31,6 +31,21 @@ body.front .wrapper {
   z-index: 999;
 }
 
+body.front .stuff {
+  float: right;
+}
+
+body.front .stuff nav a {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 1em;
+  font-family: Ubuntu, sans-serif;
+}
+
+body.front .stuff nav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 body.front .labels {
   text-align: center;
   position: relative;
