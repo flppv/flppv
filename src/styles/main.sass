@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400italic)
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400)
 
 body.front
   color: #fff
@@ -86,25 +86,30 @@ body.front
         width: 125px
 
 .faq
-  background: #babfd1
+  background: #7da0a2
   .questions
     max-width: 850px
     margin: 0 auto
     box-sizing: border-box
     a
-      color: #1c964a
+      color: #4900ff
+      text-decoration: none
+      border-bottom: 1px dotted #4900ff
+      transition: .2s
       &:visited
-        color: #078938
+        color: #4900ff
       &:hover
-        text-decoration: none
+        border-bottom: 1px solid #4900ff
     h4
-      font-size: 20px
+      font-size: 22px
       margin: 20px 0
       font-family: 'Roboto Slab', sans-serif
+      font-weight: 300
+      color: #000
     .question
       background: #fff
       margin-bottom: 15px
-      border-radius: 3px
+      border-radius: 10px
       h2
         padding: 15px 30px
         margin: 0
@@ -117,12 +122,12 @@ body.front
         display: none
         padding: 15px 30px
         border-top: 1px dashed black
-        border-bottom-right-radius: 3px
-        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 10px
+        border-bottom-left-radius: 10px
         background: #efefef
         p
           font-size: 18px
-          margin: 5px 0
+          margin: 10px 0
           font-family: 'Noto Sans', sans-serif
   .like
     display: flex

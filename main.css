@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400);
 body.front {
   color: #fff;
   overflow: hidden;
@@ -147,7 +147,7 @@ body.front .links a img {
 }
 
 .faq {
-  background: #babfd1;
+  background: #7da0a2;
 }
 
 .faq .questions {
@@ -157,27 +157,32 @@ body.front .links a img {
 }
 
 .faq .questions a {
-  color: #1c964a;
+  color: #4900ff;
+  text-decoration: none;
+  border-bottom: 1px dotted #4900ff;
+  transition: .2s;
 }
 
 .faq .questions a:visited {
-  color: #078938;
+  color: #4900ff;
 }
 
 .faq .questions a:hover {
-  text-decoration: none;
+  border-bottom: 1px solid #4900ff;
 }
 
 .faq .questions h4 {
-  font-size: 20px;
+  font-size: 22px;
   margin: 20px 0;
   font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  color: #000;
 }
 
 .faq .questions .question {
   background: #fff;
   margin-bottom: 15px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .faq .questions .question h2 {
@@ -197,14 +202,14 @@ body.front .links a img {
   display: none;
   padding: 15px 30px;
   border-top: 1px dashed black;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   background: #efefef;
 }
 
 .faq .questions .question .answer p {
   font-size: 18px;
-  margin: 5px 0;
+  margin: 10px 0;
   font-family: 'Noto Sans', sans-serif;
 }
 
