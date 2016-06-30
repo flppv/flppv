@@ -4,7 +4,7 @@ function init() {
     number: 50
   }, 1500);
   $("#pos").animateNumber({
-    number: 116
+    number: 100
   }, 2000);
   $("#gh").animateNumber({
     number: 500
