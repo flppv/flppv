@@ -1,12 +1,12 @@
 $(init);
 function init() {
   $("#code").animateNumber({
-    number: 46
+    number: 50
   }, 1500);
   $("#pos").animateNumber({
-    number: 114
+    number: 116
   }, 2000);
   $("#gh").animateNumber({
-    number: 350
+    number: 500
   }, 1750);
 }
