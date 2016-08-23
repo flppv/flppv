@@ -2,7 +2,8 @@
 
 body.front
   color: #000
-  background: #151515
+  background: #606c88
+  background: linear-gradient(to left, #606c88 , #3f4c6b)
   overflow: hidden
   font-family: Monda, sans-serif
   *::selection
@@ -84,8 +85,10 @@ body.front
       margin: 0 1.5em
       &:first-child img
         width: 100px
-      img
-        width: 125px
+      svg
+        margin: 0 20px
+        fill: #fff
+        width: 64px
         user-select: none
 
 .faq
