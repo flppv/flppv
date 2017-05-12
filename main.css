@@ -1,32 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Fjalla+One|Monda|Montserrat:400,700|Roboto+Slab:300,400,700|Noto+Sans:400|);
 body.front {
   color: #000;
-  background: #606c88;
-  background: linear-gradient(to left, #606c88, #3f4c6b);
+  background: #f5f5f5;
   overflow: hidden;
   font-family: Monda, sans-serif;
-}
-
-body.front *::-moz-selection {
-  background: #000;
-}
-
-body.front *::selection {
-  background: #000;
 }
 
 body.front .wrapper {
   width: 100%;
   min-height: 100vh;
+  margin-top: 5em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,18 +23,19 @@ body.front .wrapper {
 }
 
 body.front .stuff {
-  float: right;
+  padding: 5px;
+  text-align: right;
 }
 
 body.front .stuff nav a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   margin: 1em;
   font-family: Ubuntu, sans-serif;
 }
 
 body.front .stuff nav a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 body.front .labels {
@@ -60,7 +50,17 @@ body.front .labels h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #000;
+  transition: font-size .2s ease;
+}
+
+body.front .labels h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 1em 0 0;
+  padding: 0;
+  color: #000;
 }
 
 body.front .labels p {
@@ -70,7 +70,17 @@ body.front .labels p {
   font-size: 1.25em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: #000;
+  transition: font-size .2s ease;
+}
+
+body.front .labels p.stack {
+  display: block;
+  max-width: 300px;
+  white-space: normal;
+  margin: .3em auto 0;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 
 body.front h6 {
@@ -79,51 +89,8 @@ body.front h6 {
   text-transform: uppercase;
 }
 
-body.front .info {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 2.5em 0;
-  color: #fff;
-}
-
-body.front .info .item {
-  margin: 0 5em;
-  width: 100%;
-  font-size: .8em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body.front .info .item .count {
-  font-size: 8em;
-  min-width: 250px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-body.front .info .item .label {
-  margin-top: -1em;
-  text-align: center;
-  font-size: 1.5em;
-}
-
 body.front .links {
-  margin-top: 5em;
+  margin-top: 3em;
   margin-bottom: 1em;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -139,6 +106,7 @@ body.front .links {
 body.front .links a {
   display: inline-block;
   margin: 0 1.5em;
+  transition: margin .2s ease;
 }
 
 body.front .links a:first-child img {
@@ -147,7 +115,7 @@ body.front .links a:first-child img {
 
 body.front .links a svg {
   margin: 0 20px;
-  fill: #fff;
+  fill: #000;
   width: 64px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -155,173 +123,12 @@ body.front .links a svg {
           user-select: none;
 }
 
-.faq {
-  background: #7da0a2;
-}
-
-.faq .questions {
-  max-width: 850px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.faq .questions a {
-  color: #4900ff;
-  text-decoration: none;
-  border-bottom: 1px dotted #4900ff;
-  transition: .2s;
-}
-
-.faq .questions a:visited {
-  color: #4900ff;
-}
-
-.faq .questions a:hover {
-  border-bottom: 1px solid #4900ff;
-}
-
-.faq .questions h4 {
-  font-size: 22px;
-  margin: 20px 0;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 300;
-  color: #000;
-}
-
-.faq .questions .question {
-  background: #fff;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.faq .questions .question h2 {
-  padding: 15px 30px;
-  margin: 0;
-  font-size: 28px;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 400;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.faq .questions .question .answer {
-  display: none;
-  padding: 15px 30px;
-  border-top: 1px dashed black;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background: #efefef;
-}
-
-.faq .questions .question .answer p {
-  font-size: 18px;
-  margin: 10px 0;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.faq .like {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 50px auto;
-}
-
-@media screen and (max-width: 1060px) {
-  body.front .info .item {
-    margin: 0 1.5em;
-  }
-  body.front .info .item .count {
-    font-size: 5.5em;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .faq .questions {
-    margin: 30px;
-  }
-  body.front .info {
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  body.front .info .item {
-    margin: 1.5em 2.5em;
-    max-width: 150px;
-  }
-  body.front .info .item .count {
-    font-size: 4.5em;
-  }
-  body.front .info .item .label {
-    white-space: normal;
-    font-size: 1.25em;
-    margin-top: .75em;
-  }
-}
-
 @media screen and (max-width: 540px) {
-  body.front .info {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-  }
-  body.front .info .item {
-    margin: .5em 0;
-    max-width: 150px;
-  }
-  body.front .info .item .count {
-    font-size: 3em;
-  }
-  body.front .info .item .label {
-    white-space: normal;
-    line-height: 1.25;
-  }
-  body.front .links {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 1em;
-  }
   body.front .links a {
-    margin: .5em;
-  }
-  body.front .links a img {
-    width: 80px;
-  }
-  .faq .questions {
-    margin: 20px;
-  }
-  .faq .questions .question {
-    background: #fff;
-    margin-bottom: 15px;
-    border-radius: 3px;
-  }
-  .faq .questions .question h2 {
-    padding: 20px 30px;
-    font-size: 28px;
-  }
-  .faq .questions .question .answer {
-    padding: 10px 30px;
-  }
-  .faq .questions .question .answer p {
-    font-size: 18px;
+    margin: 0;
   }
   body.front .labels h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   body.front .labels p {
     font-size: .75em;

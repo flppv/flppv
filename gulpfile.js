@@ -12,8 +12,7 @@ gulp.task('serve', ['styles', 'templates'], function () {
   browserSync.init({
       server: {
         baseDir: './'
-      },
-      browser: 'google chrome'
+      }
   });
 
   gulp.watch('src/styles/**/*.sass', ['styles']);
