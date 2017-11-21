@@ -13,6 +13,8 @@ body {
 }
 
 p {
+
+  max-width: 700px;
   margin: 0;
 
   font-family: "Muli", serif;
@@ -21,6 +23,12 @@ p {
   color: black;
 
   transition: font-size .2s, line-height .2s;
+  animation-name: fall-down;
+  animation-duration: .5s;
+}
+
+p + p {
+  margin-top: 1rem;
 }
 
 p > strong {
@@ -51,7 +59,7 @@ a:after {
 a:hover {
   color: mediumslateblue;
 
-  animation: woah-link .2s;
+  animation: woah-link .25s infinite;
 }
 
 a:hover:after {
@@ -85,14 +93,22 @@ a:hover:after {
 
 @keyframes woah-link {
   0% {
-    letter-spacing: initial;
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(2px);
   }
 
   50% {
-    letter-spacing: 10px;
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(-2px);
   }
 
   100% {
-    letter-spacing: initial;
+    transform: translateX(0);
   }
 }
